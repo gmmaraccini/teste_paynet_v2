@@ -24,6 +24,8 @@ Video de demonstração
 
 https://vimeo.com/manage/videos/985352641/fec7fedbe5
 
+cp .env.example .env
+( deve-se configurar os dados do banco e tambem do smtp ( Sugestão : MailTrap ))
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
