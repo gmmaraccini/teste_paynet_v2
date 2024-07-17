@@ -23,3 +23,11 @@ http://localhost:8000/password/reset - Pagina de reset
 Video de demonstração
 
 https://vimeo.com/manage/videos/985352641/fec7fedbe5
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=senhafalsa
+
