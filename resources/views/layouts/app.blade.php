@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel Sanctum Auth</title>
+    <title>Teste da Paynet - Gabriel de Medeiros Maraccini</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="{{ url('/') }}">Laravel Sanctum</a>
+    <a class="navbar-brand" href="{{ url('/') }}">Teste da Paynet - Gabriel de Medeiros Maraccini</a>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
             @guest

@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+    app:
+        image: bitnami/laravel:latest
+        container_name: laravel-app
+        environment:
+            - APP_ENV=local
+            - APP_DEBUG=false
+            - APP_KEY=base64:PJz2rdtHB/xzGYrRUkasaqRwKctMVvD6JkCMH6TjGnI=
+            - APP_URL=http://localhost
+            - DB_CONNECTION=mysql
+            - DB_HOST=db
+            - DB_PORT=3306
+            - DB_DATABASE=laravel
+            - DB_USERNAME=root
+            - DB_PASSWORD=senhafalsa
+        ports:
+            - "8000:8000"
+        volumes:
+            - .:/app
+        depends_on:
+            - db
+        networks:
+            - laravel-network
+
+    db:
+        image: mysql:latest
+        container_name: laravel-db
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=senhafalsa
+            - MYSQL_DATABASE=laravel
+            - MYSQL_PASSWORD=senhafalsa
+        volumes:
+            - db_data:/var/lib/mysql
+        networks:
+            - laravel-network
+
+volumes:
+    db_data:
+
+networks:
+    laravel-network:
+        external: true

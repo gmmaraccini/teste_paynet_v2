@@ -1,3 +1,2 @@
-<p>Você solicitou uma redefinição de senha. Clique no link abaixo para redefinir sua senha:</p>
-<p><a href="{{ $resetLink }}">Redefinir Senha</a></p>
-<p>Se você não solicitou uma redefinição de senha, ignore este email.</p>
+<p>Email de redefinição de senha:</p>
+<p><a href="{{ $resetLink }}">Redefinir Senha - Clique aqui</a></p>

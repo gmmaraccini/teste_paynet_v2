@@ -22,4 +22,4 @@ Route::get('/password/reset/{token}', [ResetPasswordController::class, 'showRese
 Route::post('/password/reset', [ResetPasswordController::class, 'reset'])->name('password.update');
 
 
-Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::middleware('auth:sanctum')->get('/home', [HomeController::class, 'index'])->name('home');
