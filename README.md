@@ -20,3 +20,6 @@ http://localhost:8000/login - Pagina de login
 http://localhost:8000/register - Pagina de cadastro
 http://localhost:8000/password/reset - Pagina de reset
 
+Video de demonstração
+
+https://vimeo.com/manage/videos/985352641/fec7fedbe5
